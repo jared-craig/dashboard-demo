@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 export default function Layout() {
   const headerHeight = 60;
-  const footerHeight = 40;
+  const footerHeight = 30;
 
   return (
     <>
@@ -16,7 +16,7 @@ export default function Layout() {
         sx={{ height: `calc(100vh - ${headerHeight + footerHeight}px)` }}
       >
         <SideDrawer />
-        <Box sx={{ flexGrow: 1, p: 2 }}>
+        <Box sx={{ flexGrow: 1, p: 2, overflowY: 'auto' }}>
           <Outlet />
         </Box>
       </Stack>

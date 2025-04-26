@@ -6,11 +6,12 @@ export default function SideDrawer() {
     <Stack
       direction='column'
       sx={{
-        width: '250px',
+        width: '500px',
         borderRight: '2px solid',
       }}
     >
       <SideDrawerItem title='Home' to='' />
+      <SideDrawerItem title='Analytics' to='analytics' />
       <SideDrawerItem title='About' to='about' />
       <SideDrawerItem title='BadLink' to='badlink' />
     </Stack>

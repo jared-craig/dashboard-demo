@@ -11,7 +11,10 @@ export default function SideDrawerItem({ title, to }: SideDrawerItemProps) {
     <Box
       sx={{
         p: '8px 16px',
-        '&:hover': { backgroundColor: 'lightblue' },
+        '&:hover': {
+          backgroundColor: 'rgb(73, 90, 251)',
+          textShadow: '1px 1px 2px black',
+        },
       }}
     >
       <Link to={to} style={{ textDecoration: 'none', color: 'inherit' }}>

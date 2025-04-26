@@ -8,10 +8,7 @@ import '@fontsource/roboto/700.css';
 import App from '@/App.tsx';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
-import { BrowserRouter, Route, Routes } from 'react-router';
-import Home from '@/pages/home/Home.tsx';
-import About from '@/pages/about/About.tsx';
-import NotFound from '@/pages/not-found/NotFound.tsx';
+import { BrowserRouter } from 'react-router';
 
 import { grey } from '@mui/material/colors';
 
@@ -30,13 +27,7 @@ createRoot(document.getElementById('root')!).render(
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<App />}>
-            <Route index element={<Home />} />
-            <Route path='about' element={<About />} />
-            <Route path='*' element={<NotFound />} />
-          </Route>
-        </Routes>
+        <App />
       </BrowserRouter>
     </ThemeProvider>
   </StrictMode>
