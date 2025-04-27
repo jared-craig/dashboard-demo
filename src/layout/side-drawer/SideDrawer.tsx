@@ -6,7 +6,8 @@ export default function SideDrawer() {
     <Stack
       direction='column'
       sx={{
-        width: '500px',
+        width: '300px',
+        minWidth: '300px',
         borderRight: '2px solid',
       }}
     >

@@ -10,15 +10,9 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import { BrowserRouter } from 'react-router';
 
-import { grey } from '@mui/material/colors';
-
 const theme = createTheme({
   palette: {
     mode: 'dark',
-    background: {
-      default: grey[900],
-      paper: grey[900],
-    },
   },
 });
 
