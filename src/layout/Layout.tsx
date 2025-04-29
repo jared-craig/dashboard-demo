@@ -21,7 +21,16 @@ export default function Layout() {
         sx={{ height: `calc(100vh - ${headerHeight + footerHeight}px)` }}
       >
         <SideDrawer open={drawerOpen} />
-        <Box sx={{ flexGrow: 1, p: 2, overflowY: 'auto' }}>
+        <Box
+          sx={{
+            flexGrow: 1,
+            p: 2,
+            borderRight: '2px solid',
+            overflowY: 'auto',
+            background:
+              'linear-gradient(135deg, #121212 0%,rgba(255, 255, 255, 0.12) 100%)',
+          }}
+        >
           <Outlet />
         </Box>
       </Stack>
