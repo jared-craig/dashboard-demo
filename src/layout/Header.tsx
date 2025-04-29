@@ -27,7 +27,11 @@ export default function Header({ headerHeight, onMenuClick }: HeaderProps) {
       >
         <MenuIcon />
       </IconButton>
-      <Typography variant='h4'>Dashboard Demo</Typography>
+      <Typography
+        sx={{ typography: { xs: 'h5', sm: 'h4' }, textWrap: 'nowrap' }}
+      >
+        Dashboard Demo
+      </Typography>
     </Box>
   );
 }

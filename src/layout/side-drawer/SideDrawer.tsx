@@ -10,9 +10,9 @@ export default function SideDrawer({ open }: SideDrawerProps) {
     <Stack
       direction='column'
       sx={{
-        width: open ? 300 : 0,
-        minWidth: open ? 300 : 0,
-        transition: 'width 0.2s',
+        width: open ? 200 : 0,
+        minWidth: open ? 200 : 0,
+        transition: 'width 0.25s',
         borderRight: '2px solid',
         overflow: 'hidden',
       }}
