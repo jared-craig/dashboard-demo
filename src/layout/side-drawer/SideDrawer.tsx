@@ -1,14 +1,20 @@
 import { Stack } from '@mui/material';
 import SideDrawerItem from './SideDrawerItem';
 
-export default function SideDrawer() {
+interface SideDrawerProps {
+  open: boolean;
+}
+
+export default function SideDrawer({ open }: SideDrawerProps) {
   return (
     <Stack
       direction='column'
       sx={{
-        width: '300px',
-        minWidth: '300px',
+        width: open ? 300 : 0,
+        minWidth: open ? 300 : 0,
+        transition: 'width 0.2s',
         borderRight: '2px solid',
+        overflow: 'hidden',
       }}
     >
       <SideDrawerItem title='Home' to='' />
