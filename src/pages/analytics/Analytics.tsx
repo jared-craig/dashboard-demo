@@ -97,13 +97,18 @@ export default function Analytics() {
       </Grid>
       <Grid size={gridSize}>
         <ChartCard title='Customer Satisfaction'>
-          <Stack direction='row' spacing={2} sx={{ height: 300 }}>
+          <Stack
+            direction='row'
+            spacing={2}
+            sx={{ height: 300, justifyContent: 'center' }}
+          >
             {Object.entries(GAUGE_DATA).map(([key, value]) => (
               <Gauge
                 key={key}
                 value={value}
-                text={() => `${key.toUpperCase()}\n${value}%`}
+                text={() => `${key.slice(0, 3).toUpperCase()}\n${value}%`}
                 sx={{
+                  maxWidth: 200,
                   [`& .${gaugeClasses.valueArc}`]: {
                     fill: getGaugeColor(value),
                   },

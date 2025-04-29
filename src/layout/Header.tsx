@@ -13,7 +13,7 @@ export default function Header({ headerHeight, onMenuClick }: HeaderProps) {
         display: 'flex',
         alignItems: 'center',
         height: headerHeight,
-        paddingInline: 8,
+        paddingInline: 4,
         borderBottom: '2px solid',
       }}
     >
